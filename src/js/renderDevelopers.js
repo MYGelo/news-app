@@ -1,6 +1,8 @@
 import { all } from "axios";
 import g from "calendar-dates";
 import { developers } from '../developers';
+import svg from '../img/sprite.svg';
+
 const gitHubPath = "/News-App/sprite.601f618d";
 const allDevelopers = developers;
 //console.log(allDevelopers);
@@ -29,16 +31,16 @@ const q = allDevelopers.map(({
   <ul  class="developers__container">
   
       <li class="developers__item"><a class="developers__link" href="${linkedIn}"> <svg class="developer__svg">
-      <use href="${gitHubPath}.svg#icon-linkedin"></use>
+      <use href="${svg}.${gitHubPath}.svg#icon-linkedin"></use>
   </svg></a></li>
       <li class="developers__item"><a class="developers__link" href="${gitHub}"> <svg class="developer__svg">
-      <use href="${gitHubPath}.svg#icon-github"></use>
+      <use href="${svg}.${gitHubPath}.svg#icon-github"></use>
   </svg></a></li>
       <li class="developers__item"><a class="developers__link" href="${mail}"> <svg class="developer__svg">
-      <use href="${gitHubPath}.svg#icon-mail"></use>
+      <use href="${svg}.${gitHubPath}.svg#icon-mail"></use>
   </svg></a></li>
       <li class="developers__item"><a class="developers__link" href="${telegram}"><svg class="developer__svg">
-      <use href="${gitHubPath}.svg#icon-telegram"></use>
+      <use href="${svg}.${gitHubPath}.svg#icon-telegram"></use>
   </svg></a></li>
   </ul>
   <span class="developers__role-style"></span>
